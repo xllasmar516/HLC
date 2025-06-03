@@ -1,0 +1,165 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Código y café</title>
+    <!-- Enlaces a bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Engagement&family=Gabriela&family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      th {
+        background-color: #f3680c !important;
+      }
+
+      td {
+        background-color: #fffed6 !important;
+      }
+
+      .fondo-naranja {
+        background-color: #ffb219 !important;
+      }
+      body {
+        background-color: #ffc247;
+        /*background-image: url(/DIW/img/background.jpg);
+        background-size: cover;  Escala para cubrir toda la pantalla 
+        background-position: center;  Centra la imagen 
+        background-repeat: no-repeat;  No repetir la imagen 
+        height: 100vh; */
+      }
+      form {
+        margin: 100px;
+      }
+      nav {
+        font-size: 1.2em;
+        font-family: "Quicksand", sans-serif;
+        font-weight: 700;
+      }
+      h1 {
+        font-family: "Engagement", serif;
+        color: #5a2400;
+        font-size: 600%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fondo-naranja mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand my-2 mx-3" href="./index.php">
+          <img
+            src="./img/logo.png"
+            alt="Código y Café"
+            id="logo"
+            style="height: 2.5em"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Participantes
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="alta_participante.php" id="mnuAltaParticipante"
+                    >Alta de participante</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="buscar_participante.php" id="mnuBuscarParticipante"
+                    >Buscar participante</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="listado_participantes.php" id="mnuListadoParticipantes"
+                    >Listado de participantes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="frm_participantes_evento.php" id="mnuListadoPorEvento"
+                    >Listado de participantes por evento</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Eventos
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="alta_evento.php" id="mnuAltaEvento"
+                    >Alta de evento</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="buscar_evento.php" id="mnuBuscarEvento"
+                    >Buscar evento</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="listado_eventos.php" id="mnuListadoEventos"
+                    >Listado de eventos</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="frm_eventos_fecha.php" id="mnuListadoPorFecha"
+                    >Listado de eventos por fecha</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
